@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --primary-clr: #FF7010;
+} 
+
+.desktop-hidden {
+    display: none !important;
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}  
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #E5E5E5;
+    color: #191919;
+    font-weight: normal;
+}
+
+.center-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-align: match-parent;
+}
+
+a:any-link {
+    text-decoration-line: underline;
+    cursor: auto;
+}
+
+.btn-primary {
+    height: 48px;
+    min-width: fit-content;
+    padding: 0 16px;
+    background-color: var(--primary-clr);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    gap: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.btn-select {
+    min-width: fit-content;
+    padding: 13px 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #FF7010;
+    border-radius: 6px;
+    border: none;
+}
+
+header {
+    background-color: #fff;
+}
+
+
+header .navigation {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navigation .left-side ul, 
+header .navigation .right-side ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+header .navigation ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+header nav {
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+header nav .navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+/* ! Category section */
+.product-categories-wrapper {
+    margin: 30px 0;
+}
+
+.product-categories-wrapper .product-cotegories {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}   
+
+.product-categories-wrapper .product-cotegories .category {
+    width: calc((100% - 210px) / 8);
+    background-color: #fff;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1px solid #F0F0F0;
+    gap: 8px;
+    height: 104px;
+    cursor: pointer;
+}
+
+
+.product-categories-wrapper .product-cotegories a {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.product-categories-wrapper .product-cotegories a i {
+    color: #FF7010;
+}
+
+.product-categories-wrapper .product-cotegories a p {
+    color: #191919;
+}
+
+.product-categories-wrapper .product-cotegories a i:hover, p:hover {
+    color: #E23535 !important;
+}
+
+/* ! sale section */
+
+.sale .container .cashback {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.sale .container .cashback .choise {
+    height: 340px;
+    max-width: 300px;
+    border-radius: 12px;
+    width: calc(( 100% - 90px) / 4 );
+    position: relative;
+}
+
+
+.sale .container .cashback .choise p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+/* ! delivery section */
+
+.delivery .container {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 8px;
+    margin: 30px auto;
+    padding: 16px 32px;
+    gap: 30px;
+}
+
+.delivery .container div p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #191919;
+}
+
+.delivery .container .adress input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    color: #A5A5A5;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    background: #FFFFFF;
+}
+
+
+/* ! menu section */
+
+.menu .head {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .head a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #191919;
+}
+
+.menu .head button {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    color: #191919;
+}
+
+.menu .items {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu .items .item {
+    width: calc((100% - 90px) / 4 ) !important;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 12px;
+    width: min-content;
+}
+
+.menu .items .item .item-1 {
+    max-width: 300px;
+}
+
+.menu .items .item .item-2 {
+    margin: 16px 20px 20px 20px;
+}
+
+.menu .items .item .item-2 .part-2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.menu .items .item .item-2 .part-3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.menu .items .item .item-2 .part-4 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu .items .item .item-2 .part-4 p {
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #FF7010;
+}

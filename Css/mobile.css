@@ -1,0 +1,108 @@
+@media (max-width: 576px) {
+    .mobile-hidden {
+        display: none !important;
+    }
+
+    .desktop-hidden {
+        display: flex !important;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    header .navigation .left-side {
+        width: 100%;
+    }
+
+    header .navigation .left-side ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .navigation ul li {
+        font-size: 10px;
+        gap: 6px;
+    }
+
+
+    header .hamburger-menu {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    /* ! Category section */
+    .product-categories-wrapper .product-cotegories {
+        gap: 12px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .product-categories-wrapper .product-cotegories::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product-categories-wrapper .product-cotegories .category  {
+        flex-direction: row;
+        height: 45px;
+        padding: 0 12px;
+        min-width: fit-content;
+    }
+
+    .sale .container {
+        gap: 20px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .sale .container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sale .container .choise {
+        flex-direction: row;
+        height: 320px;
+        min-width: fit-content;
+    }
+
+    .delivery .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .delivery .container div p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: 'Inter';
+        line-height: 20px;
+        margin: 24px 65px 0;
+        height: 20px;
+    
+    }
+
+    .delivery .container .adress input {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 16px 20px 20px;
+        width: calc( 100% - 40px );
+        padding: 13px;
+    }
+
+    .menu .head {
+        margin-bottom: 20px;
+    }
+
+    .menu .head a {
+        font-size: 28px;
+    line-height: 32px;
+    }
+
+    .menu .head button {
+
+    }
+}

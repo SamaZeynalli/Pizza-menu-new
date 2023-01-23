@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza-menu</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+          <section class="navigation">
+            <div class="left-side">
+              <ul>
+                <li>
+                  <img src="./Images/Location.png" alt="account">
+                  <p>Москва</p>
+                </li>
+                <li class="mobile-hidden">
+                  <p>Проверить адрес</p>
+                </li>
+                <li>
+                  <p>Среднее время доставки*: <strong>00:24:19</strong></p>
+                </li>
+              </ul>
+            </div>
+            <div class="right-side mobile-hidden">
+              <ul>
+                <li>
+                  <p>Время работы: с 11 : 00 до 23 : 00</p>
+                </li>
+                <li>
+                  <img src="./Images/Account.png" alt="">
+                  <p>Войти в аккаунт</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <nav>
+          <div class="container">
+            <div class="navigation-bar">
+              <a href="/" class="logo">
+                <img src="./Images/Group 152.png" alt="logo">
+              </a>
+              <button class="btn-primary center-element mobile-hidden">
+                <img src="./Images/Shopping bag.png" alt="">
+                <span>0 $</span>
+              </button>
+  
+              <button class="hamburger-menu center-element desktop-hidden">
+                <img src="./Images/Menu.png" alt="">
+              </button>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <section class="product-categories-wrapper">
+        <div class="container">
+          <div class="product-cotegories">
+            <a href="" class="category center-element">
+              <div class="image center-element">
+                <i class="fa-solid fa-fire"></i>
+              </div>
+              <p>Акции</p>
+            </a>
+            <a href="" class="category center-element">
+              <div class="image center-element">
+                <i class="fa-solid fa-pizza-slice"></i>
+              </div>
+              <p>Пицца</p>
+            </a>
+            <a href="" class="category center-element">
+              <div class="image center-element">
+                <i class="fa-solid fa-fish"></i>
+              </div>
+              <p>Суши</p>
+            </a>
+            <a href="" class="category center-element">
+              <div class="image center-element">
+                <i class="fa-solid fa-martini-glass-citrus"></i>
+              </div>
+              <p>Напитки</p>
+            </a>
+            <a href="" class="category center-element">
+                <div class="image center-element">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+                <p>Десерты</p>
+            </a>
+            <a href="" class="category center-element">
+                <div class="image center-element">
+                    <i class="fa-solid fa-burger"></i>
+                </div>
+                <p>Закуски</p>
+            </a>
+            <a href="" class="category center-element">
+                <div class="image center-element">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </div>
+                <p>Комбо</p>
+            </a>
+            <a href="" class="category center-element">
+                <div class="image center-element">
+                  <i class="fa-solid fa-spoon"></i>
+                </div>
+                <p>Соусы</p>
+            </a>
+            </div>
+          </div>
+    </section>
+    <section class="sale">
+        <div class="container">
+            <div class="cashback">
+                <div class="choise">
+                    <img src="./Images/Group 737.png" alt="sale">
+                    <p>3 средние пиццы от 999 рублей</p>
+                </div>
+                <div class="choise">
+                    <img src="./Images/Group 738.png" alt="sale">
+                    <p>Кэшбек 10% на самовывоз (доставка)</p>
+                </div>
+                <div class="choise">
+                    <img src="./Images/Group 737.png" alt="sale">
+                    <p>3 средние пиццы от 999 рублей</p>
+                </div>
+                <div class="choise">
+                    <img src="./Images/Group 738.png" alt="sale">
+                    <p>Кэшбек 10% на самовывоз (доставка)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="delivery">
+        <div class="container">
+            <div class="">
+                <p>Проверить адрес доставки</p>
+            </div>
+            <div class="adress">
+                <label for="adress"></label>
+                <input type="text" id="adress" placeholder="Адрес" style="max-width: calc (100% - 500px);" size="70">
+            </div>
+            <div>
+                <button class="btn-select mobile-hidden">
+                    Проверить
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section class="menu">
+            <div class="head">
+                <a href="">Пицца</a>
+                <button class="btn-primary">
+                    <img src="./Images/Filter.png" alt="filter">
+                    <span>Фильтры</span>
+                </button>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/chicken chili.png" alt="pizza">
+                        </div>
+                    </div>
+                    <div class="item-2">    
+                        <div class="part-2">
+                            <p>Чикен Сладкий Чили</p>
+                        </div>
+                        <div class="part-3">
+                            <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</p>
+                        </div>
+                        <div class="part-4">
+                            <button class="btn-select">
+                                Выбрать
+                            </button>
+                            <p>от 399 ₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/easy.png" alt="pizza">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <p>EASY PEASY огуречный расколбас</p>
+                        </div>
+                        <div class="part-3">
+                            <p>Курица, Лук, Перец Халапеньо...</p>
+                        </div>
+                        <div class="part-4">
+                            <button class="btn-select">
+                                Выбрать
+                            </button>
+                            <p>от 549 ₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/peasy.png" alt="pizza">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <p>ЧEASY PEASY чикен а-ля хрен</p>
+                        </div>
+                        <div class="part-3">
+                            <p>Курица, Лук, Соус Карбонара,...</p>
+                        </div>
+                        <div class="part-4">
+                            <button class="btn-select">
+                                Выбрать
+                            </button>
+                            <p>от 249 ₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/4season.png" alt="pizza">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <p>4 сезона</p>
+                        </div>
+                        <div class="part-3">
+                            <p>Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...</p>
+                        </div>
+                        <div class="part-4">
+                            <button class="btn-select">
+                                Выбрать
+                            </button>
+                            <p>от 630 ₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/4season.png" alt="pizza">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <p>4 сезона</p>
+                        </div>
+                        <div class="part-3">
+                            <p>Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...</p>
+                        </div>
+                        <div class="part-4">
+                            <button class="btn-select">
+                                Выбрать
+                            </button>
+                            <p>от 630 ₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/peasy.png" alt="pizza">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <p>ЧEASY PEASY чикен а-ля хрен</p>
+                        </div>
+                        <div class="part-3">
+                            <p>Курица, Лук, Соус Карбонара,...</p>
+                        </div>
+                        <div class="part-4">
+                            <button class="btn-select">
+                                Выбрать
+                            </button>
+                            <p>от 249 ₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/chicken chili.png" alt="pizza">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <p>Чикен Сладкий Чили</p>
+                        </div>
+                        <div class="part-3">
+                            <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</p>
+                        </div>
+                        <div class="part-4">
+                            <button class="btn-select">
+                                Выбрать
+                            </button>
+                            <p>от 399 ₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/easy.png" alt="pizza">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <p>EASY PEASY огуречный расколбас</p>
+                        </div>
+                        <div class="part-3">
+                            <p>Курица, Лук, Перец Халапеньо...</p>
+                        </div>
+                        <div class="part-4">
+                            <button class="btn-select">
+                                Выбрать
+                            </button>
+                            <p>от 549 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
