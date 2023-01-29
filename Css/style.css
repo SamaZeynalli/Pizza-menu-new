@@ -59,24 +59,26 @@ a:any-link {
     gap: 8px;
     color: #fff;
     cursor: pointer;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+}
+
+.btn-only-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-select {
     min-width: fit-content;
-    padding: 13px 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    color: #FF7010;
     display: flex;
     align-items: center;
-    cursor: pointer;
-    color: #FFFFFF;
-    background: #FF7010;
-    border-radius: 6px;
+    text-align: right;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
     border: none;
+    background: #FFFFFF;
 }
 
 header {
@@ -156,86 +158,116 @@ header nav .navigation-bar {
     color: #191919;
 }
 
-.product-categories-wrapper .product-cotegories a i:hover, p:hover {
-    color: #E23535 !important;
+.product-categories-wrapper .product-cotegories a:hover i ,
+.product-categories-wrapper .product-cotegories a:hover p {
+    color: #E23535 ;
 }
 
 /* ! sale section */
 
-.sale .container .cashback {
+.sale {
     display: flex;
+    justify-content: space-between;
     gap: 30px;
+    margin-top: 30px;
+}
+
+.sale .choise {
+    width: calc((100% - 90px) / 4);
+    height: 343px;
+    background-color: #E23535;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sale .choise:nth-child(2n-1) {
+    background-color:#FF7010;
+}
+
+.sale .choise .image {
+    height: 210px;
+    width: 100%;
+    display: flex;
     align-items: center;
 }
 
-.sale .container .cashback .choise {
-    height: 340px;
-    max-width: 300px;
-    border-radius: 12px;
-    width: calc(( 100% - 90px) / 4 );
-    position: relative;
+.sale .choise .image img {
+    width: 100%;
 }
 
-
-.sale .container .cashback .choise p {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+.sale .choise a {
+    margin-bottom: 20px;
+    padding: 0 20px;
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
+    color: #fff;
+    text-decoration: none;
 }
+
+.sale .choise a:hover {
+    text-decoration: underline;
+}
+
 
 /* ! delivery section */
 
-.delivery .container {
+.delivery .adress {
     display: flex;
     align-items: center;
     background: #FFFFFF;
     border: 1px solid #F0F0F0;
     border-radius: 8px;
-    margin: 30px auto;
-    padding: 16px 32px;
-    gap: 30px;
+    padding: 0 32px;
+    gap: 32px;
+    justify-content: space-between;
+    height: 80px;
 }
 
-.delivery .container div p {
+.delivery .adress {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
     color: #191919;
 }
 
-.delivery .container .adress input {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+.search-bar {
+    display: flex;
     align-items: center;
-    color: #A5A5A5;
     border: 1px solid #F0F0F0;
     border-radius: 6px;
     background: #FFFFFF;
+    flex: 1;
+    padding: 0 12px;
+    gap: 12px;
+    height: 48px;
+}
+
+.search-bar input {
+    flex: 1;
+    outline: none;
+    border: none;
+}
+
+.search-bar input::placeholder { 
+    color: #A5A5A5;
 }
 
 
 /* ! menu section */
 
 .menu .head {
-    margin-bottom: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 30px auto;
 }
 
 .menu .head a {
     text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 48px;
@@ -245,59 +277,147 @@ header nav .navigation-bar {
 }
 
 .menu .head button {
-    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    background: #FFFFFF;
+}
+
+.menu .head button span {
     color: #191919;
 }
 
 .menu .items {
     display: flex;
     align-items: flex-start;
-    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .menu .items .item {
-    width: calc((100% - 90px) / 4 ) !important;
-    margin-bottom: 30px;
-    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 20px;
     border: 1px solid #F0F0F0;
     border-radius: 12px;
-    width: min-content;
+    background: #FFFFFF;
+    width: calc((100% - 90px) / 4);
+    height: 480px;
+    position: relative;
 }
 
-.menu .items .item .item-1 {
-    max-width: 300px;
+.menu .items .item .item-1 .part-1 {
+    
 }
+.menu .items .item .item-1 img {
+    width: 100%;
+}
+
+.menu .items .item .item-1 .part-1 button {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+
 
 .menu .items .item .item-2 {
-    margin: 16px 20px 20px 20px;
+    padding: 20px;
 }
 
 .menu .items .item .item-2 .part-2 {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
+    color: #191919;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .menu .items .item .item-2 .part-3 {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.menu .items .item .item-2 .part-4 {
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: space-between;
+    padding-top: 16px;
 }
 
-.menu .items .item .item-2 .part-4 p {
+.menu .items .item .item-2 .part-3 p {
+    color: #FF7010;
+    font-weight: 600;
     font-size: 18px;
     line-height: 24px;
     display: flex;
     align-items: center;
     text-align: right;
+}
+
+.order {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 60px auto;
+}
+
+.order p {
+    background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #F9F9F9 100%), #191919;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.order span {
     color: #FF7010;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+footer {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+}
+
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+    margin: 32px auto;
+}
+
+footer .container div ul li b {
+    color: #191919;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+footer .container div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .container div ul li {
+    display: flex;
+    gap: 12px;
+}
+
+footer .container div ul li .social {
+    display: flex;
+    gap: 24px;
+}
+
+footer .container div ul li .social div {
+    display: flex;
+    gap: 12px;
 }

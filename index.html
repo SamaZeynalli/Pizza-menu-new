@@ -60,7 +60,7 @@
     </header>
     <section class="product-categories-wrapper">
         <div class="container">
-          <div class="product-cotegories">
+            <div class="product-cotegories">
             <a href="" class="category center-element">
               <div class="image center-element">
                 <i class="fa-solid fa-fire"></i>
@@ -110,50 +110,53 @@
                 <p>Соусы</p>
             </a>
             </div>
-          </div>
-    </section>
-    <section class="sale">
-        <div class="container">
-            <div class="cashback">
-                <div class="choise">
-                    <img src="./Images/Group 737.png" alt="sale">
-                    <p>3 средние пиццы от 999 рублей</p>
-                </div>
-                <div class="choise">
-                    <img src="./Images/Group 738.png" alt="sale">
-                    <p>Кэшбек 10% на самовывоз (доставка)</p>
-                </div>
-                <div class="choise">
-                    <img src="./Images/Group 737.png" alt="sale">
-                    <p>3 средние пиццы от 999 рублей</p>
-                </div>
-                <div class="choise">
-                    <img src="./Images/Group 738.png" alt="sale">
-                    <p>Кэшбек 10% на самовывоз (доставка)</p>
-                </div>
-            </div>
+            <section class="sale">
+                    <div class="choise">
+                        <div class="image">
+                            <img src="./Images/Group 82.png" alt="#">
+                        </div>
+                        <a href="#">3 средние пиццы от 999 рублей</a>
+                    </div>
+                    <div class="choise">
+                        <div class="image">
+                            <img src="./Images/Group 83.png" alt="#">
+                        </div>
+                        <a href="#">Кэшбек 10% на самовывоз (доставка)</a>
+                    </div>
+                    <div class="choise">
+                        <div class="image">
+                            <img src="./Images/Group 82.png" alt="#">
+                        </div>
+                        <a href="#">3 средние пиццы от 999 рублей</a>
+                    </div>
+                    <div class="choise">
+                        <div class="image">
+                            <img src="./Images/Group 83.png" alt="#">
+                        </div>
+                        <a href="#">3 средние пиццы от 999 рублей</a>
+                    </div>
+            </section>
         </div>
     </section>
     <section class="delivery">
         <div class="container">
-            <div class="">
-                <p>Проверить адрес доставки</p>
-            </div>
             <div class="adress">
-                <label for="adress"></label>
-                <input type="text" id="adress" placeholder="Адрес" style="max-width: calc (100% - 500px);" size="70">
-            </div>
-            <div>
-                <button class="btn-select mobile-hidden">
-                    Проверить
-                </button>
+                <p>Проверить адрес доставки</p>
+                <div class="search-bar">
+                    <img src="./Images/Location.png" alt="">
+                    <input type="text" placeholder="Адрес">
+                    <button class="btn-primary desktop-hidden btn-only-icon">
+                        <img src="./images/send.png" alt="send">
+                    </button>
+                </div>
+                <button class="btn-primary mobile-hidden">Проверить</button>
             </div>
         </div>
-    </section>
+      </section>
     <div class="container">
         <section class="menu">
             <div class="head">
-                <a href="">Пицца</a>
+                <a href="#">Пицца</a>
                 <button class="btn-primary">
                     <img src="./Images/Filter.png" alt="filter">
                     <span>Фильтры</span>
@@ -164,20 +167,20 @@
                     <div class="item-1">
                         <div class="part-1">
                             <img src="./Images/chicken chili.png" alt="pizza">
+                            <button class="btn-primary">NEW</button>
                         </div>
                     </div>
-                    <div class="item-2">    
+                    <div class="item-2 offer">    
                         <div class="part-2">
-                            <p>Чикен Сладкий Чили</p>
-                        </div>
-                        <div class="part-3">
+                            <b>Чикен Сладкий Чили</b>
                             <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</p>
                         </div>
-                        <div class="part-4">
-                            <button class="btn-select">
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
                                 Выбрать
                             </button>
-                            <p>от 399 ₽</p>
+                            <button class="btn-select">от 399 ₽</button>
+                            <button class="desktop-hidden discount">от 699 ₽</button>
                         </div>
                     </div>
                 </div>
@@ -185,20 +188,19 @@
                     <div class="item-1">
                         <div class="part-1">
                             <img src="./Images/easy.png" alt="pizza">
+                            <button class="btn-primary">ХИТ</button>
                         </div>
                     </div>
                     <div class="item-2">
                         <div class="part-2">
-                            <p>EASY PEASY огуречный расколбас</p>
-                        </div>
-                        <div class="part-3">
+                            <b>EASY PEASY огуречный расколбас</b>
                             <p>Курица, Лук, Перец Халапеньо...</p>
                         </div>
-                        <div class="part-4">
-                            <button class="btn-select">
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
                                 Выбрать
                             </button>
-                            <p>от 549 ₽</p>
+                            <button class="btn-select">от 549 ₽</button>
                         </div>
                     </div>
                 </div>
@@ -210,16 +212,14 @@
                     </div>
                     <div class="item-2">
                         <div class="part-2">
-                            <p>ЧEASY PEASY чикен а-ля хрен</p>
-                        </div>
-                        <div class="part-3">
+                            <b>ЧEASY PEASY чикен а-ля хрен</b>
                             <p>Курица, Лук, Соус Карбонара,...</p>
                         </div>
-                        <div class="part-4">
-                            <button class="btn-select">
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
                                 Выбрать
                             </button>
-                            <p>от 249 ₽</p>
+                            <button class="btn-select">от 249 ₽</button>
                         </div>
                     </div>
                 </div>
@@ -231,16 +231,14 @@
                     </div>
                     <div class="item-2">
                         <div class="part-2">
-                            <p>4 сезона</p>
-                        </div>
-                        <div class="part-3">
+                            <b>4 сезона</b>
                             <p>Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...</p>
                         </div>
-                        <div class="part-4">
-                            <button class="btn-select">
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
                                 Выбрать
                             </button>
-                            <p>от 630 ₽</p>
+                            <button class="btn-select">от 630 ₽</button>
                         </div>
                     </div>
                 </div>
@@ -252,16 +250,14 @@
                     </div>
                     <div class="item-2">
                         <div class="part-2">
-                            <p>4 сезона</p>
-                        </div>
-                        <div class="part-3">
+                            <b>4 сезона</b>
                             <p>Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...</p>
                         </div>
-                        <div class="part-4">
-                            <button class="btn-select">
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
                                 Выбрать
                             </button>
-                            <p>от 630 ₽</p>
+                            <button class="btn-select">от 630 ₽</button>
                         </div>
                     </div>
                 </div>
@@ -273,16 +269,14 @@
                     </div>
                     <div class="item-2">
                         <div class="part-2">
-                            <p>ЧEASY PEASY чикен а-ля хрен</p>
-                        </div>
-                        <div class="part-3">
+                            <b>ЧEASY PEASY чикен а-ля хрен</b>
                             <p>Курица, Лук, Соус Карбонара,...</p>
                         </div>
-                        <div class="part-4">
-                            <button class="btn-select">
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
                                 Выбрать
                             </button>
-                            <p>от 249 ₽</p>
+                            <button class="btn-select">от 249 ₽</button>
                         </div>
                     </div>
                 </div>
@@ -294,16 +288,14 @@
                     </div>
                     <div class="item-2">
                         <div class="part-2">
-                            <p>Чикен Сладкий Чили</p>
-                        </div>
-                        <div class="part-3">
+                            <b>Чикен Сладкий Чили</b>
                             <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</p>
                         </div>
-                        <div class="part-4">
-                            <button class="btn-select">
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
                                 Выбрать
                             </button>
-                            <p>от 399 ₽</p>
+                            <button class="btn-select">от 399 ₽</button>
                         </div>
                     </div>
                 </div>
@@ -315,22 +307,406 @@
                     </div>
                     <div class="item-2">
                         <div class="part-2">
-                            <p>EASY PEASY огуречный расколбас</p>
-                        </div>
-                        <div class="part-3">
+                            <b>EASY PEASY огуречный расколбас</b>
                             <p>Курица, Лук, Перец Халапеньо...</p>
                         </div>
-                        <div class="part-4">
-                            <button class="btn-select">
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
                                 Выбрать
                             </button>
-                            <p>от 549 ₽</p>
+                            <button class="btn-select">от 549 ₽</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="head">
+                <a href="#">Суши</a>
+                <button class="btn-primary">
+                    <img src="./Images/Filter.png" alt="filter">
+                    <span>Фильтры</span>
+                </button>
+            </div>
+            <div class="items sushi">
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/filadelfia.png" alt="sushi">
+                            <button class="btn-primary">NEW</button>
+                        </div>
+                    </div>
+                    <div class="item-2 offer">    
+                        <div class="part-2">
+                            <b>Филадельфия кранч</b>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">475 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/cream.png" alt="sushi">
+                            <button class="btn-primary">NEW</button>
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Филадельфия крем-брюле</b>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">395 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/super.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Супер Филадельфия</b>
+                            <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">425 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/mama.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Тигр мама</b>
+                            <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">525 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/mama.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Тигр мама</b>
+                            <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">525 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/super.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Супер Филадельфия</b>
+                            <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">425 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images//filadelfia.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2 offer">    
+                        <div class="part-2">
+                            <b>Филадельфия кранч</b>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">475 ₽</button>
+                            <button class="desktop-hidden discount">от 699 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/cream.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Филадельфия крем-брюле</b>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">395 ₽</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="head">
+                <a href="#">Закуски</a>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/french.png" alt="sushi">
+                            <button class="btn-primary">NEW</button>
+                        </div>
+                    </div>
+                    <div class="item-2 offer">    
+                        <div class="part-2">
+                            <b>Филадельфия кранч</b>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">475 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/chicken.png" alt="sushi">
+                            <button class="btn-primary">ХИТ</button>
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Филадельфия крем-брюле</b>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">395 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/snack.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Супер Филадельфия</b>
+                            <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">425 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/donar.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Тигр мама</b>
+                            <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">525 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/donar.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Тигр мама</b>
+                            <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">525 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/snack.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Супер Филадельфия</b>
+                            <p>Действительно много семги, сливочный сыр, огурец, рис, н...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">425 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/french.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2 offer">    
+                        <div class="part-2">
+                            <b>Филадельфия кранч</b>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">475 ₽</button>
+                            <button class="desktop-hidden discount">от 699 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-1">
+                        <div class="part-1">
+                            <img src="./Images/chicken.png" alt="sushi">
+                        </div>
+                    </div>
+                    <div class="item-2">
+                        <div class="part-2">
+                            <b>Филадельфия крем-брюле</b>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                        </div>
+                        <div class="part-3">
+                            <button class="btn-primary mobile-hidden">
+                                Выбрать
+                            </button>
+                            <button class="btn-select">395 ₽</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
+    <div class="order">
+        <h1>Доставка пиццы в Москве</h1>
+        <p>Захотелось чего-то вкусного и сытного? Желание простое и понятное, только в холодильнике все не то, и до магазина идти лень. Все пропало? Нет. Недорого заказать пиццу в Москве очень просто! Вам на помощь спешит супергерой – Domino’s Pizza! Как у всякого супергероя, у Domino’s Pizza есть свои суперсилы: восхитительный вкус продукции из отборных ингредиентов; широкий ассортимент, включающий легендарные, фирменные и классические виды, для вегетарианцев и любителей экспериментировать; быстрая и бесплатная доставка пиццы в течение 30 минут, чтобы вкусное и ароматное блюдо не успевало остыть.Как сделать заказ.Доставка пиццы от Domino’s – это когда Вам не нужно никуда ехать или звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо: выбрать понравившийся вариант и количество порций; положить желаемое в «Корзину»; не уходить далеко, так как вкусная пицца на заказ с доставкой уже мчится к Вам из ближайшей пиццерии Domino’s. И не забудьте оплатить заказ курьеру!</p>
+        <span>Показать полностью</span>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <img src="./Images/Group 152.png" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li> <b>Куда пицца</b></li>
+                    <li>О компании</li>
+                    <li>Пользовательское соглашение</li>
+                    <li>Условия гарантии</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><b>Помощь</b></li>
+                    <li>Ресторан</li>
+                    <li>Контакты</li>
+                    <li>Поддержка</li>
+                    <li>Отследить заказ</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><b>Контакты</b></li>
+                    <li>
+                        <img src="./Images/phone.png" alt="phone">
+                        <p>+7 (926) 223-10-11</p>
+                    </li>
+                    <li>
+                        <img src="./Images/place.png" alt="place">
+                        <p>Москва, ул. Юных Ленинцев, д.99</p>
+                    </li>
+                    <li>
+                        <div class="social">
+                            <div>
+                                <img src="./Images/facebook.png" alt="facebook">
+                                <p>Facebok</p>
+                            </div>
+                            <div>
+                                <img src="./Images/instagram.png" alt="instagram">
+                                <p>Instagram</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button class="desktop-hidden btn-bag">
+                    <img src="./Images/Shopping bag.png" alt="">
+                </button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
